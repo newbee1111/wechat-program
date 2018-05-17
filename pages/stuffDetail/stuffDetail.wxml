@@ -1,0 +1,81 @@
+<!--pages/stuffDetail/stuffDetail.wxml-->
+<view class="container">
+  <view class="swiper-wrapper">
+    <swiper class="swiper-container" autoplay="true">
+        <swiper-item>
+          <image mode='aspectFit' src="../../images/testItemImage.png" class="slide-image" />
+        </swiper-item>
+        <swiper-item>
+          <image mode='aspectFit' src="../../images/testItemImage.png" class="slide-image" />
+        </swiper-item>
+        <swiper-item>
+          <image mode='aspectFit' src="../../images/testItemImage.png" class="slide-image" />
+        </swiper-item>
+    </swiper>
+  </view>
+  <view class="item-detail-wrapper">
+    <view class="item-basic-detail">
+      <view class="basic-left">
+        <view class="basic-title-wrapper">
+          <text class="basic-title">【防水浆料】通用性-10KG</text>
+        </view>
+        <view class="basic-price-wrapper">
+        <text class="basic-price">￥</text>
+          <text class="basic-price emphasis">20</text>
+          <text class="basic-price">.00</text>
+        </view>
+      </view>
+      <view class="basic-right">
+        <button open-type='share' class="share-button-wrapper">
+          <image class="share-icon" src='../../images/share.png'></image>
+          <text class="share-text">分享</text>
+        </button>
+      </view>
+    </view>
+    <view class="transport-fee-wrapper">
+      <text class="transport-fee">运费 ￥15.00</text>
+    </view>
+    <view class="activity-wrapper">
+      <text class="activity-tag">满减</text>
+      <text class="activity-tag">包邮</text>
+      <text class="activity-text">满69元，包邮</text>
+      <image src='../../images/right-arrow.png' class="right-arrow"></image>
+    </view>
+    <view bindtap='toggleOptions' class="size-wrapper">
+      <text class="size-text">选择：规格选择</text>
+      <image src='../../images/right-arrow.png' class="right-arrow"></image>
+    </view>
+    <view style="{{showOptions ? '' : 'display:none;'}}">
+      <view class="size-option-wrapper">
+        <text class="size-text">规格1</text>
+      </view>
+      <view class="size-option-wrapper">
+        <text class="size-text">规格2</text>
+      </view>
+    </view>
+    <view class="tabbar-wrapper">
+      <button bindtap='tabHandler' id='0' class="{{tabbarSelected === 0 ? 'tabbar-button tabbar-button-selected' : 'tabbar-button'}}">商品详情</button>
+      <button bindtap='tabHandler' id='1' class="{{tabbarSelected === 1 ? 'tabbar-button tabbar-button-selected' : 'tabbar-button'}}">成交记录</button>
+    </view>
+    <block wx:if="{{tabbarSelected === 0}}">
+      <view class="long-picture-wrapper">
+        <image class="long-picture" mode='widthFix' src='../../images/test-long-picture.png'></image>
+      </view>
+    </block>
+    <block wx:if="{{tabbarSelected === 1}}">
+      <view class="sold-record-wrapper"></view>
+    </block>
+  </view>
+  <view class="bottom-operation-wrapper">
+    <view class="narrow-button">
+      <image class="narrow-icon" src="../../images/service.png"></image>
+      <text class="narrow-text">客服</text>
+    </view>
+    <view bindtap='toShopCart' class="narrow-button">
+      <image class="narrow-icon" src="../../images/cart.png"></image>
+      <text class="narrow-text">购物车</text>
+    </view>
+    <button class="wide-button cart-button">加入购物车</button>
+    <button class="wide-button buy-button">立即购买</button>
+  </view>
+</view>

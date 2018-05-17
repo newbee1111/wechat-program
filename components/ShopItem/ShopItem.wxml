@@ -1,0 +1,18 @@
+<!--components/ShopItem/ShopItem.wxml-->
+<view class="shop-item-wrapper">
+  <view bindtap='toDetailPage' class="item-image-wrapper">
+    <image class="item-image" mode='aspectFit' src='{{imageUrl}}'></image>
+  </view>
+  <view class="item-message-wrapper">
+    <text bindtap='toDetailPage'  class="item-title"> [{{stuffType}}]{{name}}</text>
+    <text bindtap='toDetailPage'  class="item-price">￥{{price}}</text>
+    <view class="item-detail-wrapper">
+      <text class="item-already-sold">已售：{{alreadySold}}</text>
+      <view class="item-cart-proccessor">
+        <button class="sub-button" bindtap='subCurrentNumber'>-</button>
+        <text class="current-number">{{currentNumber}}</text>
+        <button class="add-button" bindtap='addCurrentNumber'>+</button>
+      </view>
+    </view>
+  </view>
+</view>

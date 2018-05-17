@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "ShopItem":"../../components/ShopItem/ShopItem"
+  },
+  "navigationBarTitleText": "威廉商城"
+
+}

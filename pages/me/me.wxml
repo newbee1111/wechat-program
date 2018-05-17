@@ -1,0 +1,77 @@
+<!--pages/me/me.wxml-->
+<view class="container">
+  <view class="avatar-wrapper">
+    <image class="avatar" src="../../images/testItemImage.png"></image>
+    <text class="nickname">万宏斌</text>
+  </view>
+  <view class="order-wrapper">
+    <view class="order-title-wrapper">
+      <view class="my-order-wrapper">
+        <text class="order-title">我的订单</text>
+      </view>
+      <view class="order-to-all">
+        <text class="order-all-text">查看全部订单</text>
+        <image class="right-arrow" src='../../images/right-arrow.png'></image>
+      </view>
+    </view>
+    <view class="order-kinds-wrapper">
+      <view class="order-unpaied-wrapper">  
+        <image class="order-kinds-image" src='../../images/unpaied.png'></image>
+        <text class="order-kinds-text">待付款</text>
+      </view>
+      <view class="order-unpaied-wrapper">  
+        <image class="order-kinds-image" src='../../images/unpaied.png'></image>
+        <text class="order-kinds-text">待发货</text>
+      </view>
+      <view class="order-unpaied-wrapper">  
+        <image class="order-kinds-image" src='../../images/unpaied.png'></image>
+        <text class="order-kinds-text">已发货</text>
+      </view>
+      <view class="order-unpaied-wrapper">  
+        <image class="order-kinds-image" src='../../images/unpaied.png'></image>
+        <text class="order-kinds-text">已完成</text>
+      </view>
+    </view>
+    <view class="account-wrapper">
+      <view class="account-title-wrapper">
+        <text class="account-title-text">账户余额</text>
+      </view>
+      <view class="account-charge">
+        <text class="account-text">￥ 0</text>
+        <button class="account-button">充值</button>
+      </view>
+    </view>
+    <view class="common-wrapper">
+      <view class="common-title-wrapper">
+        <text class="common-title-text">我的会员卡</text>
+      </view>
+      <view class="common-right-wrapper">
+        <image class="right-arrow" src='../../images/right-arrow.png'></image>
+      </view>
+    </view>
+    <view class="common-wrapper">
+      <view class="common-title-wrapper">
+        <text class="common-title-text">我的积分</text>
+      </view>
+      <view class="common-right-wrapper">
+        <image class="right-arrow" src='../../images/right-arrow.png'></image>
+      </view>
+    </view>
+    <view class="common-wrapper">
+      <view class="common-title-wrapper">
+        <text class="common-title-text">我的优惠券</text>
+      </view>
+      <view class="common-right-wrapper">
+        <image class="right-arrow" src='../../images/right-arrow.png'></image>
+      </view>
+    </view>
+    <view class="common-wrapper">
+      <view class="common-title-wrapper">
+        <text class="common-title-text">商家信息</text>
+      </view>
+      <view class="common-right-wrapper">
+        <image class="right-arrow" src='../../images/right-arrow.png'></image>
+      </view>
+    </view>
+  </view>
+</view>

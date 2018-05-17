@@ -1,0 +1,56 @@
+<!--pages/shopCart/shopCart.wxml-->
+<view class="container">
+  <block wx:if="{{cartEmpty}}">
+    <view class="empty-wrapper" style="display:none;">
+      <text class="empty-text emphasis">购物车快饿瘪了T.T</text>
+      <text class="empty-text">快给我挑点宝贝</text>
+      <button bindtap='toMall' class="empty-button">去逛逛</button>
+    </view>
+  </block>
+  <block wx:if="{{!cartEmpty}}">
+    <view class="cart-wrapper">
+      <view class="cart-shop-wrapper">
+        <checkbox color='red' class='shop-checkbox' checked='{{selectedAll}}' />
+        <view class="shop-title-wrapper">
+          <image class="shop-icon" src='../../images/shop.png'></image>
+          <text class="shop-title">威廉涂料水头1号店</text>
+        </view>
+        <view bindtap='toggleEditMode' class="edit-wrapper">
+          <block wx:if="{{editMode}}">
+            <text class="edit-text">完成</text>
+          </block>
+          <block wx:else>
+            <text class="edit-text">编辑</text>
+          </block>
+        </view>
+      </view>
+      <view class="cart-item-wrapper">
+        <checkbox color='red' class='item-checkbox' checked='{{selectedAll}}' />
+        <image class="item-pic" src='../../images/testItemImage.png'></image>
+        <view class="item-message-wrapper">
+          <text class="item-title">防水浆料-柔韧型-20L</text>
+          <text class="item-per-price">￥20.00</text>
+        </view>
+        <view class="item-number">
+          <block wx:if="{{!editMode}}">
+            <text class="number">X 10</text>
+          </block>
+          <block wx:else>
+            <button class="delete-button">删除</button>
+          </block>
+        </view>
+      </view>
+      <view class="cart-checkout-wrapper">
+        <view class="select-all-wrapper">
+          <checkbox bindtap='toggleSelectAll' color='red' class="select-all-checkbox" />
+          <text class="select-all-text">全选</text>
+        </view>
+        <view class="cart-price-wrapper">
+          <text class="total-price">合计: ￥20.00</text>
+          <text class="transport-fee">不含运费</text>
+        </view>
+        <button class="checkout-button">结算</button>
+      </view>
+    </view>
+  </block>
+</view>

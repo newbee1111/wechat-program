@@ -1,0 +1,23 @@
+<!--pages/mall/mall.wxml-->
+<view class="{{modalShow? 'container noscroll' : 'container'}}">
+  <view class="filter-button-wrapper">
+    <button class="filter-button">按综合 ↓</button>
+    <button class="filter-button">按销量 ↓</button>
+    <button class="filter-button">按价格 ↑</button>
+    <button bindtap='toggleModal' class="filter-button filter-special">筛选</button>
+  </view>
+  <view class="shop-wrapper">
+    <ShopItem name="柔韧性-20L" stuffType="防水浆料" price="69.00" alreadySold="5" imageUrl="../../images/testItemImage.png" />
+    <ShopItem name="柔韧性-20L" stuffType="防水浆料" price="69.00" alreadySold="5" imageUrl="../../images/testItemImage.png" />
+    <ShopItem name="柔韧性-20L" stuffType="防水浆料" price="69.00" alreadySold="5" imageUrl="../../images/testItemImage.png" />
+  </view>
+  <view class="filter-modal-wrapper" style="{{modalShow? 'display: flex': 'display:none'}}">
+    <view class="filter-modal">
+      <button bindtap='filterHandler' class="filter-modal-button">全部分类</button>
+      <button bindtap='filterHandler' class="filter-modal-button">石材胶黏剂</button>
+      <button bindtap='filterHandler' class="filter-modal-button">瓷砖胶黏剂</button>
+      <button bindtap='filterHandler' class="filter-modal-button">防水工程</button>
+      <button bindtap='filterHandler' class="filter-modal-button">白乳胶胶水</button>
+    </view>
+  </view>
+</view>

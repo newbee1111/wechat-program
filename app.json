@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/mall/mall",
+    "pages/shopCart/shopCart",
+    "pages/news/news",
+    "pages/me/me",
+    "pages/stuffDetail/stuffDetail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#3b3f4b",
+    "navigationBarTitleText": "威廉涂料",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "color": "#fff",
+    "selectedColor": "#fff",
+    "borderStyle": "white",
+    "backgroundColor": "#3b3f4b",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/home/home",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-selected.png"
+      },
+      {
+        "text": "商城",
+        "pagePath": "pages/mall/mall",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-selected.png"
+      },
+      {
+        "text": "购物车",
+        "pagePath": "pages/shopCart/shopCart",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-selected.png"
+      },
+      {
+        "text": "企业动态",
+        "pagePath": "pages/news/news",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-selected.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/me/me",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-selected.png"
+      }
+    ]
+  }
+}

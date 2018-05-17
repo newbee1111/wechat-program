@@ -1,0 +1,163 @@
+/* pages/me/me.wxss */
+/*头像部分*/
+.avatar-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 16rpx solid #f5f5f5;
+  height: 380rpx;
+}
+.avatar {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+  box-shadow: 0rpx 0rpx 10rpx #fafafa;
+  border: 2rpx solid #cacaca;
+  margin-bottom: 20rpx;
+}
+.nickname {
+  font-size: 32rpx;
+}
+
+/*订单部分*/
+.order-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 16rpx;
+}
+.order-title-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  border-bottom: 1px solid #f1f1f1;
+  padding-bottom: 16rpx;
+}
+.my-order-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-left: 24rpx;
+}
+.order-title {
+  font-size: 28rpx;
+}
+.order-to-all {
+  flex:1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 12rpx;
+}
+.order-all-text {
+  font-size: 28rpx;
+  color: #6f6f6f;
+}
+.right-arrow {
+  width: 52rpx;
+  height: 52rpx;
+}
+.order-kinds-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  padding-top: 20rpx;
+  border-bottom: 16rpx solid #f5f5f5;
+  padding-bottom: 20rpx;
+}
+.order-unpaied-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.order-kinds-image {
+  width: 60rpx;
+  height: 60rpx;
+  margin-bottom: 12rpx;
+}
+.order-kinds-text {
+  font-size: 24rpx;
+  color: #6f6f6f;
+}
+
+/*账户余额*/
+.account-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-top: 16rpx;
+  padding-bottom: 16rpx;
+  align-items: center;
+  border-bottom: 1px solid #f1f1f1;
+}
+.account-title-wrapper {
+  flex: 2.5;
+  display: flex;
+  flex-direction: row;
+  padding-left: 20rpx;
+}
+.account-title-text {
+  font-size: 28rpx;
+}
+.account-charge {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  padding-right: 20rpx;
+  align-items: center;
+  justify-content: flex-end;
+}
+.account-text {
+  font-size: 28rpx;
+  font-weight: bold;
+}
+.account-button {
+  font-size: 24rpx;
+  border: 2rpx solid #000;
+  padding: 0rpx 20rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+.account-button::after{
+  border: none;
+  outline: none;
+}
+
+/*剩余相同部分*/
+.common-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-top: 16rpx;
+  padding-bottom: 16rpx;
+  align-items: center;
+  border-bottom: 1px solid #f1f1f1;
+}
+.common-title-wrapper {
+  flex: 10;
+  flex-direction: row;
+  padding-left: 20rpx;
+  align-items: center;
+}
+.common-title-text {
+  font-size: 28rpx;
+}
+.common-right-wrapper {
+  flex: 1;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content: center;
+}

@@ -1,0 +1,9 @@
+<!--pages/news/news.wxml-->
+<view class="container">
+  <view class="news-wrapper">
+    <image class="news-pic" mode='widthFix' src='../../images/newsTestPic.png'></image>
+  </view>
+  <view class="news-wrapper">
+    <image class="news-pic" mode='widthFix' src='../../images/newsTestPic.png'></image>
+  </view>
+</view>

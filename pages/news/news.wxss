@@ -1,0 +1,10 @@
+/* pages/news/news.wxss */
+.container {
+  padding: 12rpx 20rpx;
+}
+.news-wrapper{
+  width: 100%;
+}
+.news-pic {
+  width: 100%;
+}
