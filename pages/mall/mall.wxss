@@ -15,12 +15,11 @@
 }
 .filter-button {
   flex: 1;
-  height: 50rpx;
   outline: none;
   border: none;
   background: #fff;
   color: #000;
-  font-size: 30rpx;
+  font-size: 28rpx;
   display: flex;
   flex-direction: column;
   justify-content: center;

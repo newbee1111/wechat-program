@@ -6,7 +6,7 @@ Page({
    */
   data: {
     orderType: '',
-    orderList: []
+    orderList: ['0']
   },
 
   /**

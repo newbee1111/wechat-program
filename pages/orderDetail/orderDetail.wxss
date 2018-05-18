@@ -47,3 +47,6 @@
   font-size: 28rpx;
   color: #e4e4e4;
 }
+.order-detail-item-wrapper {
+  width: 100%;
+}

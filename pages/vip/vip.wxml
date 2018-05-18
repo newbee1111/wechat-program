@@ -2,6 +2,7 @@
 <view class="container">
   <view class="vip-card-wrapper">
     <image class="vip-card" mode='widthFix' src='../../images/vip-card.png'></image>
+    <text class="card-number">0000 0000 0000</text>
   </view>
   <view class="vip-message-wrapper">
     <view class="vip-common-wrapper">

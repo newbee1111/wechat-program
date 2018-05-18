@@ -15,4 +15,9 @@
       <text class="empty-text">暂无订单</text>
     </view>
   </block>
+  <block wx:else>
+    <view class="order-detail-item-wrapper">
+      <OrderItem />
+    </view>
+  </block>
 </view>

@@ -1,0 +1,22 @@
+<!--components/OrderItem/OrderItem.wxml-->
+<view class="order-item-wrapper">
+  <view class="order-item-title">
+    <image class="shop-icon" src='../../images/shop.png'></image>
+    <text class="shop-title">威廉涂料水头1号店</text>
+  </view>
+  <view class="cart-item-wrapper">
+    <view style="flex:0.2;"></view>
+    <image class="item-pic" src='../../images/testItemImage.png'></image>
+    <view class="item-message-wrapper">
+      <text class="item-title">防水浆料-柔韧型-20L</text>
+      <text class="item-per-price">￥20.00</text>
+    </view>
+    <view class="item-number">
+      <text class="number">X 10</text>
+    </view>
+  </view>
+  <view class="operation-button-wrapper">
+    <view style="flex:5;"></view>
+    <button class="operation-button">删除订单</button>
+  </view>
+</view>
