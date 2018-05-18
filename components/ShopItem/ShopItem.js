@@ -50,6 +50,12 @@ Component({
         currentNumber: currentNumber + 1
       })
     },
+    subCurrentNumber: function () {
+      let { currentNumber } = this.data;
+      this.setData({
+        currentNumber: currentNumber - 1 < 0 ? 0 : currentNumber - 1
+      })
+    },
     toDetailPage: function () {
       wx.navigateTo({
         url: '../stuffDetail/stuffDetail',

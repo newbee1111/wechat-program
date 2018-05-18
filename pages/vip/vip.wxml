@@ -1,0 +1,26 @@
+<!--pages/vip/vip.wxml-->
+<view class="container">
+  <view class="vip-card-wrapper">
+    <image class="vip-card" mode='widthFix' src='../../images/vip-card.png'></image>
+  </view>
+  <view class="vip-message-wrapper">
+    <view class="vip-common-wrapper">
+      <text class="vip-common-title">积分</text>
+      <text class="vip-common-value">0</text>
+    </view>
+    <view class="vip-common-wrapper">
+      <text class="vip-common-title">等级</text>
+      <text class="vip-common-value">查看</text>
+    </view>
+    <view class="vip-common-wrapper">
+      <text class="vip-common-title">优惠券</text>
+      <text class="vip-common-value">查看</text>
+    </view>
+  </view>
+  <view class="vip-detail-wrapper">
+    <text class="vip-detail-text">会员卡详情</text>
+  </view>
+  <view class="vip-detail-wrapper">
+    <text class="vip-detail-text">公众号</text>
+  </view>
+</view>

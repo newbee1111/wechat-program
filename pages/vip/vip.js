@@ -1,4 +1,4 @@
-// pages/me/me.js
+// pages/vip/vip.js
 Page({
 
   /**
@@ -13,19 +13,6 @@ Page({
    */
   onLoad: function (options) {
   
-  },
-
-  toVip: function() {
-    wx.navigateTo({
-      url: '../vip/vip',
-    })
-  },
-
-  toOrderDetail: function(e) {
-    const { id } = e.currentTarget;
-    wx.navigateTo({
-      url: `../orderDetail/orderDetail?orderType=${id}`,
-    })
   },
 
   /**

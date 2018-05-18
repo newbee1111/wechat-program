@@ -1,31 +1,29 @@
-// pages/me/me.js
+// pages/orderDetail/orderDetail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    orderType: '',
+    orderList: []
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
-  },
-
-  toVip: function() {
-    wx.navigateTo({
-      url: '../vip/vip',
+    const { orderType } = options;
+    this.setData({
+      orderType
     })
   },
 
-  toOrderDetail: function(e) {
+  orderTypeSwitch: function (e) {
     const { id } = e.currentTarget;
-    wx.navigateTo({
-      url: `../orderDetail/orderDetail?orderType=${id}`,
-    })
+    this.setData({
+      orderType: id
+    });
   },
 
   /**

@@ -1,0 +1,18 @@
+<!--pages/orderDetail/orderDetail.wxml-->
+<view class="container">
+  <view class="order-detail-nav-wrapper">
+    <button bindtap='orderTypeSwitch' id='all' class="{{orderType==='all' ? 'order-detail-nav-button selected' : 'order-detail-nav-button'}}">全部</button>
+    <button bindtap='orderTypeSwitch' id='unpaid' class="{{orderType==='unpaid' ? 'order-detail-nav-button selected' : 'order-detail-nav-button'}}">待付款</button>
+    <button bindtap='orderTypeSwitch' id='waitSend' class="{{orderType==='waitSend' ? 'order-detail-nav-button selected' : 'order-detail-nav-button'}}">待发货</button>
+    <button bindtap='orderTypeSwitch' id='send' class="{{orderType==='send' ? 'order-detail-nav-button selected' : 'order-detail-nav-button'}}">已发货</button>
+    <button bindtap='orderTypeSwitch' id='finished' class="{{orderType==='finished' ? 'order-detail-nav-button selected' : 'order-detail-nav-button'}}">已完成</button>
+  </view>
+  <block wx:if="{{orderList.length === 0}}">
+    <view class="order-detail-empty-wrapper">
+      <view class="empty-image-wrapper">
+        <image mode='widthFix' class="empty-image" src='../../images/bag.png'></image>
+      </view>
+      <text class="empty-text">暂无订单</text>
+    </view>
+  </block>
+</view>

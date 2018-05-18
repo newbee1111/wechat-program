@@ -9,25 +9,25 @@
       <view class="my-order-wrapper">
         <text class="order-title">我的订单</text>
       </view>
-      <view class="order-to-all">
+      <view bindtap='toOrderDetail' id="all" class="order-to-all">
         <text class="order-all-text">查看全部订单</text>
         <image class="right-arrow" src='../../images/right-arrow.png'></image>
       </view>
     </view>
     <view class="order-kinds-wrapper">
-      <view class="order-unpaied-wrapper">  
+      <view bindtap='toOrderDetail' id="unpaid" class="order-unpaied-wrapper">  
         <image class="order-kinds-image" src='../../images/unpaied.png'></image>
         <text class="order-kinds-text">待付款</text>
       </view>
-      <view class="order-unpaied-wrapper">  
+      <view bindtap='toOrderDetail' id="waitSend" class="order-unpaied-wrapper">  
         <image class="order-kinds-image" src='../../images/unpaied.png'></image>
         <text class="order-kinds-text">待发货</text>
       </view>
-      <view class="order-unpaied-wrapper">  
+      <view bindtap='toOrderDetail' id="send" class="order-unpaied-wrapper">  
         <image class="order-kinds-image" src='../../images/unpaied.png'></image>
         <text class="order-kinds-text">已发货</text>
       </view>
-      <view class="order-unpaied-wrapper">  
+      <view bindtap='toOrderDetail' id="finished" class="order-unpaied-wrapper">  
         <image class="order-kinds-image" src='../../images/unpaied.png'></image>
         <text class="order-kinds-text">已完成</text>
       </view>
@@ -41,7 +41,7 @@
         <button class="account-button">充值</button>
       </view>
     </view>
-    <view class="common-wrapper">
+    <view bindtap='toVip' class="common-wrapper">
       <view class="common-title-wrapper">
         <text class="common-title-text">我的会员卡</text>
       </view>

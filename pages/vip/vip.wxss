@@ -1,0 +1,54 @@
+/* pages/vip/vip.wxss */
+.vip-card-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 44rpx;
+}
+.vip-message-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 32rpx;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 6rpx solid #f5f5f5;
+  padding-bottom: 12rpx;
+}
+.vip-common-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.vip-common-title {
+  font-size: 28rpx;
+  color: #7c7c7c;
+}
+.vip-common-value {
+  font-size: 36rpx;
+  color: #c95049;
+  margin-top: 12rpx;
+}
+.vip-common-wrapper:nth-child(2) {
+  border-left: 6rpx solid #f5f5f5;
+  border-right: 6rpx solid #f5f5f5;
+}
+.vip-detail-wrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 2rpx solid #f5f5f5;
+}
+.vip-detail-text {
+  margin-left: 44rpx;
+  font-size: 32rpx;
+  color: #343434;
+  line-height: 88rpx;
+  font-weight: bold;
+}

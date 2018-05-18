@@ -5,7 +5,9 @@
     "pages/shopCart/shopCart",
     "pages/news/news",
     "pages/me/me",
-    "pages/stuffDetail/stuffDetail"
+    "pages/stuffDetail/stuffDetail",
+    "pages/vip/vip",
+    "pages/orderDetail/orderDetail"
   ],
   "window": {
     "backgroundTextStyle": "light",
