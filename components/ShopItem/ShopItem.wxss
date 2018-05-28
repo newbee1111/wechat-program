@@ -8,6 +8,7 @@
   padding-bottom: 8rpx;
   margin-left: 1%;
   background: #fff;
+  position: relative;
 }
 .item-image-wrapper {
   flex: 2;
@@ -26,10 +27,13 @@
   padding: 0 22rpx;
 }
 .item-title {
+  display: flex;
   font-size: 26rpx;
   font-weight: bold;
+  height: 52rpx;
 }
 .item-price {
+  display: flex;
   margin-top: 36rpx;
   font-size: 24rpx;
   font-weight: bold;
@@ -39,7 +43,7 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content:center;
   align-items: center;
 }
 .item-already-sold {
@@ -49,12 +53,13 @@
   color: #c1c1c1
 }
 .item-cart-proccessor {
-  flex: 1;
+  position: absolute;
+  right: 10rpx;
+  bottom: 10rpx;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  margin-right: -66rpx;
 }
 .sub-button {
   color: #ed772f

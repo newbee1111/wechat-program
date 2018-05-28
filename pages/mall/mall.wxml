@@ -7,7 +7,7 @@
     <button bindtap='toggleModal' class="filter-button filter-special">筛选</button>
   </view>
   <view class="shop-wrapper">
-    <ShopItem name="柔韧性-20L" stuffType="防水浆料" price="69.00" alreadySold="5" imageUrl="../../images/testItemImage.png" />
+    <ShopItem name="柔韧性-20L一二三四五六七八九十十一" stuffType="防水浆料" price="69.00" alreadySold="5" imageUrl="../../images/testItemImage.png" />
     <ShopItem name="柔韧性-20L" stuffType="防水浆料" price="69.00" alreadySold="5" imageUrl="../../images/testItemImage.png" />
     <ShopItem name="柔韧性-20L" stuffType="防水浆料" price="69.00" alreadySold="5" imageUrl="../../images/testItemImage.png" />
   </view>
